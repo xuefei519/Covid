@@ -1,0 +1,14 @@
+@include media-breakpoint-up(lg) {
+	.container-lg {
+		max-width: 1160px;
+	}
+}
+
+.landing{
+	@if $enable-grid-classes {
+		.container {
+			@include make-container();
+			@include make-container-max-widths();
+		}
+	}
+}
